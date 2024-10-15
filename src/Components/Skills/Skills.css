@@ -1,0 +1,55 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+    width: 100%; /* Ensure it spans the available width */
+    max-width: 800px; /* Set a maximum width to control content size */
+    margin: 0 auto; /* Center the skills section */
+    position: relative; /* To position the theme pattern correctly */
+  }
+  
+  .skill-title {
+    position: relative;
+    text-align: center;
+  }
+  
+  .skill-title h1 {
+    font-size: 80px;
+    font-weight: 600;
+    z-index: 1; /* Ensure title stays above the theme pattern */
+    margin: 0;
+  }
+  
+  .skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+    padding-left: 50px;
+    max-width: 100%; /* Ensure it doesn’t overflow */
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  
+  .skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .skill hr {
+    outline: none;
+    border: none;
+    width: 50%; /* Keep hr within 50% of the available container */
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    max-width: 100%; /* Prevent overflow when scaling */
+    box-sizing: border-box; /* Maintain sizing integrity */
+  }
+  
