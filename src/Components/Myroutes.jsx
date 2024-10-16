@@ -1,4 +1,3 @@
-// Routes.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './About/About';
@@ -8,13 +7,13 @@ import Contact from './Contact/Contact';
 import Resume from './Resume/Resume';
 import Blog from './Blog/Blog';
 import Navbar from './Navbar';
-import Anuj from './Anuj/Anuj'
-import Footer from './Footer/Footer'
+import Anuj from './Anuj/Anuj';
+import Footer from './Footer/Footer';
 import ScrollToTop from './ScrollToTop';
 
 const Myroutes = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop /> 
       <Navbar /> {/* Navbar will be displayed on all pages */}
       <Routes>
