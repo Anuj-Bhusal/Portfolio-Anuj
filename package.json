@@ -24,7 +24,7 @@
     "reactstrap": "^9.2.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://anuj-bhusal.github.io/Portfolio-Anuj/",
+  "homepage": "https://anuj-bhusal.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
