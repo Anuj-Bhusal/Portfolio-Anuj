@@ -102,9 +102,9 @@ const Resume = () => {
   // Your resume data
   const resumeData = {
     name: "Anuj Bhusal",
-    email: "anuj.bhusal@example.com",
-    phone: "123-456-7890",
-    address: "123 Developer Lane, Coding City, Nepal",
+    email: "anujbhusal96@gmail.com",
+    phone: "9814421053",
+    address: "Maitidevi, Kathmandu",
     profile: "A passionate learner and a computer science student currently pursuing a BSc (Hons) in Computer Science with Artificial Intelligence at Sunway College Kathmandu, affiliated with Birmingham City University, Birmingham. I have a deep interest in AI and data science and enjoy working on innovative solutions through coding and development.",
     education: [
       {

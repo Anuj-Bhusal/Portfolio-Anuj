@@ -7,12 +7,12 @@
 
 .Anuj img {
     margin-top: 130px;
-    width: 175px; /* Adjust size for the profile image */
-    height: 175px; /* Ensure it's a square to make it circular */
-    border-radius: 50%; /* This makes the image circular */
-    object-fit: cover; /* Ensures the image fills the container without distortion */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for styling */
-    border: 1px solid #fff; /* Optional: Adds a white border around the image */
+    width: 175px;
+    height: 175px; /* Keep it square for circular shape */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow */
+    border: 1px solid #fff; /* Optional: Adds a white border */
 }
 .Anuj h1{
     text-align: center;
@@ -60,3 +60,31 @@
 .Anuj-resume:hover{
     border-color:#ffc400;
 }
+@media(max-width:768px){
+    .Anuj img {
+        margin-top: 120px;
+        width: 260px;
+        height: 260px; /* Adjust height to match the width */
+    }
+ .Anuj h1{
+    margin-top: 50px;
+    width: 90%;
+    font-size: 50px
+ }
+ .Anuj p{
+   width: 60%;
+   font-size: 18px;
+   line-height: 32px;
+   margin: 10px 0px;
+ }
+ .Anuj-action{
+    font-size: 18px;
+    gap: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+ }
+ .Anuj-connect, .Anuj-resume{
+    padding: 20px 30px;
+    border-radius: 40;
+ }
+};

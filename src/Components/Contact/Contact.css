@@ -110,3 +110,54 @@
     transition:0.3s;
     
 }
+@media (max-width: 768px) {
+  
+    .contact {
+      margin: 50px 20px; /* Adjust margins for smaller screens */
+      gap: 40px; /* Reduce gap between elements */
+    }
+    
+    .contact-title h1 {
+      font-size: 40px; /* Reduce title font size */
+    }
+    
+    .contact-section {
+      flex-direction: column; /* Stack sections vertically */
+      gap: 50px; /* Adjust gap between sections */
+    }
+    
+    .contact-left h1 {
+      font-size: 50px; /* Reduce the size of the gradient text */
+    }
+    
+    .contact-left p {
+      font-size: 18px; /* Adjust paragraph font size */
+      line-height: 28px; /* Adjust line height */
+    }
+    
+    /* Reduce the size of input fields and add margins to avoid touching browser edges */
+    .contact-right input {
+      width: 100%; /* Full width */
+      max-width: 90%; /* Limit width to 90% of the container */
+      height: 50px; /* Reduce height */
+      padding-left: 15px; /* Adjust padding */
+    }
+    
+    .contact-right textarea {
+      width: 100%; /* Full width */
+      max-width: 90%; /* Limit width to 90% */
+      padding: 20px; /* Adjust padding */
+      font-size: 18px; /* Adjust font size for textarea */
+    }
+  
+    .contact-right {
+      gap: 20px; /* Adjust gap between fields */
+    }
+  
+    .contact-submit {
+      font-size: 20px; /* Adjust button font size */
+      padding: 15px 40px; /* Adjust padding for button */
+      max-width: 90%; /* Limit button width to 90% */
+    }
+  }
+  

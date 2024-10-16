@@ -15,7 +15,7 @@ const Projects = () => {
             <div className="project-details">
               <h3>{project.w_name}</h3>
               <p>{`Project ${project.w_no}`}</p>
-              <a href="https://github.com/Anuj-Bhusal/Stock/tree/main/stock_boot-main" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Anuj-Bhusal" target="_blank" rel="noopener noreferrer">
                 View on GitHub
               </a>
             </div>

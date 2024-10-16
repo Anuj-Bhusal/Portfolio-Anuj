@@ -1,80 +1,123 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    position: relative;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.about-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 80px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1; /* Ensure the title is above the background */
+  margin: 0;
+}
+
+.about-sections {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-left .about-me-img {
+  width: 300px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-right {
+  max-width: 600px;
+}
+
+.about-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.about-achievement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+.about-achievement h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.about-achievement:hover {
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about {
+      margin-top: 50px; /* Reduced margin for smaller screens */
   }
-  
-  .about-title {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
+
   .about-title h1 {
-    font-size: 80px;
-    font-weight: 600;
-    position: relative;
-    z-index: 1; /* Ensure the title is above the background */
-    margin: 0;
+      font-size: 50px; /* Smaller font size */
   }
-  
-  
+
   .about-sections {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+      flex-direction: column; /* Stack sections vertically */
+      gap: 20px; /* Reduced gap */
   }
-  
+
   .about-left .about-me-img {
-    width: 300px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 10px;
+      width: 100%; /* Full width on smaller screens */
+      max-width: 300px; /* Limit max width */
   }
-  
+
   .about-right {
-    max-width: 600px;
+      max-width: 100%; /* Full width for right section */
   }
-  
+
   .about-para {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.5;
+      font-size: 20px; /* Smaller paragraph font size */
   }
-  
+
   .about-achievements {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 80px;
+      flex-direction: column; /* Stack achievements vertically */
+      align-items: center; /* Center achievements */
   }
-  
-  .about-achievement {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.5s;
+
+  .about-achievement h1 {
+      font-size: 40px; /* Smaller achievement title size */
   }
-  .about-achievement h1{
-    font-size:60px ;
-    font-weight:700 ;
-    background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+  .about-achievement p {
+      font-size: 18px; /* Smaller achievement description size */
   }
-  .about-achievement p{
-    font-size: 22px;
-    font-weight: 500;
-  }
-  
-  .about-achievement:hover {
-    transform: scale(1.12);
-    transition: 0.5;
-  }
+}
