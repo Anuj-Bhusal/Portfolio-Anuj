@@ -1,101 +1,131 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 100px;
-    position: relative;
-  }
-  
-  .project-title {
-    position: relative;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.project-title {
+  position: relative;
+  text-align: center;
+}
+
+.project-title h1 {
+  font-size: 80px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.project-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.project-card {
+  margin-top: 70px;
+  width: 300px; /* Fixed width for each project card */
+  height: 400px; /* Fixed height to ensure uniform size */
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is spaced evenly */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border-color: blueviolet;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Fixed height for images to ensure consistency */
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 15px;
+  flex-grow: 1; /* Allow the details section to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+}
+
+.project-details h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.project-details p {
+  font-size: 18px;
+  color: #777;
+  flex-grow: 1; /* Allow the description to take up available space */
+}
+
+.project-details a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-details a:hover {
+  background: linear-gradient(264deg, #bf15ff -5.09%, #df8908 106.28%);
+  transform: scale(1.05);
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
   .project-title h1 {
-    font-size: 80px;
-    font-weight: 600;
-    position: relative;
-    z-index: 1;
-    margin: 0;
+    font-size: 40px; /* Reduce title font size */
   }
-  
+
   .project-container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 20px; /* Reduce gap between project cards */
+    padding: 10px; /* Reduce padding */
   }
-  
+
   .project-card {
-    margin-top: 70px;
-    width: 300px; /* Fixed width for each project card */
-    height: 400px; /* Fixed height to ensure uniform size */
-    border: 2px solid #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure content is spaced evenly */
+    width: 90%; /* Use a percentage width for responsiveness */
+    height: auto; /* Let height adjust based on content */
+    margin-top: 30px; /* Reduce top margin */
   }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-    border-color: blueviolet;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px; /* Fixed height for images to ensure consistency */
-    object-fit: cover;
-  }
-  
-  .project-details {
-    padding: 15px;
-    flex-grow: 1; /* Allow the details section to take up remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute content evenly */
-  }
-  
+
   .project-details h3 {
-    font-size: 22px;
-    margin: 10px 0;
-    background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
+    font-size: 18px; /* Reduce project title font size */
   }
-  
+
   .project-details p {
-    font-size: 18px;
-    color: #777;
-    flex-grow: 1; /* Allow the description to take up available space */
+    font-size: 16px; /* Reduce description font size */
   }
-  
+
   .project-details a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 14px; /* Reduce link font size */
+    padding: 8px 16px; /* Reduce padding on buttons */
   }
-  
-  .project-details a:hover {
-    background: linear-gradient(264deg, #bf15ff -5.09%, #df8908 106.28%);
-    transform: scale(1.05);
-  }
-  
+}
