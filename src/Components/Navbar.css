@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between; /* Keeps the logo on the left and menu on the right */
+  justify-content: space-between;
   align-items: center;
   padding: 20px 170px;
   background-color: transparent; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar img {
@@ -29,7 +33,7 @@
   position: relative;
   padding-bottom: 5px;
   text-decoration: none;
-  color: white; /* Default text color */
+  color: white;
   transition: color 0.3s ease-in-out;
 }
 
@@ -58,16 +62,15 @@
 }
 
 .nav-menu li a:focus {
-  outline: none;
-  color: #b3914e; /* Focus color for accessibility */
-  font-weight: bold;
+  outline: 2px dashed #b3914e;
+  outline-offset: 3px;
 }
 
 .nav-connect {
-  padding: 15px 30px; /* Slightly reduced padding for a sleeker look */
+  padding: 15px 30px;
   border-radius: 50px;
   background: linear-gradient(to right, #b3914e, #eee395, #b69553);
-  font-size: 18px; /* Adjusted font size */
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
@@ -76,11 +79,12 @@
 
 .nav-connect:hover {
   transform: scale(1.05);
-  background: linear-gradient(to right, #b3914e, #ccc175, #8d7236); /* Darker gradient on hover */
+  background: linear-gradient(to right, #b3914e, #ccc175, #8d7236);
 }
 
 .nav-connect:focus {
-  outline: 3px solid #b3914e; /* Focus indicator for accessibility */
+  outline: 2px dashed #b3914e;
+  outline-offset: 3px;
 }
 
 .nav-mob-close {
@@ -99,18 +103,18 @@
   }
   
   .navbar img {
-    width: 80px; /* Resize the logo for smaller screens */
+    width: 80px;
   }
   
   .nav-connect {
-    display: none; /* Hide the connect button on mobile */
+    display: none;
   }
 
   .nav-mob-open {
-    display: block; /* Show hamburger icon */
-    position: absolute; /* Change to absolute to allow scrolling */
+    display: block;
+    position: absolute;
     right: 30px;
-    top: 20px; /* Positioning at the top-right corner */
+    top: 10px;
   }
 
   .nav-mob-close {
@@ -122,7 +126,7 @@
   }
 
   .nav-menu {
-    position: fixed; /* Fixed position for the menu */
+    position: fixed;
     flex-direction: column;
     align-items: start;
     top: 0;
@@ -130,8 +134,8 @@
     background-color: #1f0016;
     width: 350px;
     height: 100%;
-    z-index: 2;
-    transition: right 0.5s;
+    z-index: 9999;
+    transition: right 0.5s ease;
     right: -350px;
   }
 

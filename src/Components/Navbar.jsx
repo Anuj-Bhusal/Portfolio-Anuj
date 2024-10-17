@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import LOGO1 from '../assets/LOGO1.png';
 import menu_open from '../assets/menu_open.svg';
@@ -29,29 +29,29 @@ const Navbar = () => {
       <ul ref={menuRef} className='nav-menu'>
         <img src={menu_close} onClick={closeMenu} alt="Close Menu" className="nav-mob-close" />
         <li>
-          <Link to="/" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Home</Link>
+          <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
         </li>
         <li>
-          <Link to="/about" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>About</Link>
+          <NavLink to="/about" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
         </li>
         <li>
-          <Link to="/skills" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Skills</Link>
+          <NavLink to="/skills" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Skills</NavLink>
         </li>
         <li>
-          <Link to="/projects" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Projects</Link>
+          <NavLink to="/projects" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Projects</NavLink>
         </li>
         <li>
-          <Link to="/blog" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Blog</Link>
+          <NavLink to="/blog" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Blog</NavLink>
         </li>
         <li>
-          <Link to="/contact" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Contact</Link>
+          <NavLink to="/contact" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
         </li>
       </ul>
       <button className='nav-connect' 
-      onClick={() => {
-        handleLinkClick(); // Close the menu when "Get in touch" is clicked
-        navigate('/contact', { replace: true });
-      }}>
+        onClick={() => {
+          handleLinkClick(); // Close the menu when "Get in touch" is clicked
+          navigate('/contact', { replace: true });
+        }}>
         Get in touch
       </button>
     </div>
