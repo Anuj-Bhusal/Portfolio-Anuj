@@ -47,7 +47,7 @@ const Contact = () => {
             method: 'post',
             data: UserData
           });
-          // clear all the inputs in browser
+         
           setName('');
           setEmail('');
           setMessage('');

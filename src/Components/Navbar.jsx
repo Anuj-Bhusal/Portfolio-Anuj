@@ -18,7 +18,7 @@ const Navbar = () => {
   }
 
   const handleLinkClick = () => {
-    closeMenu(); // Close the menu when a link is clicked
+    closeMenu(); 
   }
 
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
       </ul>
       <button className='nav-connect' 
         onClick={() => {
-          handleLinkClick(); // Close the menu when "Get in touch" is clicked
+          handleLinkClick(); 
           navigate('/contact', { replace: true });
         }}>
         Get in touch

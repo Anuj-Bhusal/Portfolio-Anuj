@@ -17,12 +17,12 @@ const Anuj = () => {
       <div className="Anuj-action">
         <div className="Anuj-connect" onClick={
         () => navigate('/contact', {
-          replace: true, // Replace the current entry in the history stack
+          replace: true, 
         })
         }>Connect with me</div>
         <div className="Anuj-resume" onClick={
         () => navigate('/resume', {
-          replace: true, // Replace the current entry in the history stack
+          replace: true, 
         })
         } >My Resume</div>
       </div>

@@ -1,189 +1,144 @@
-/* Footer container */
 .footer {
-    margin: 50px 170px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top-left p {
+  font-size: 20px;
+  max-width: 400px;
+}
+.footer-top-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.footer-email-input {
+  display: flex;
+  gap: 35px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  background: #32323b;
+  padding-right: 80px;
+}
+.footer-email-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #a0a0a0;
+  font-family: poppins;
+  font-size: 18px;
+}
+.footer-subscribe {
+  font-size: 20px;
+  padding: 22px 50px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #d2941a, #eee395, #563b05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-subscribe:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer-email-input:hover {
+  border: 1px solid white;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.footer-bottom-right {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.footer-top-left img {
+  width: 100px; 
+  height: auto; 
+}
+@media (max-width: 768px) {
+  .footer {
+    margin: 50px 20px;
+    gap: 20px;
   }
-  
-  /* Top section of the footer */
   .footer-top {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
   }
-  
   .footer-top-left p {
-    font-size: 20px;
-    max-width: 400px;
+    font-size: 18px;
+    max-width: 100%;
+    text-align: center;
   }
-  
-  /* Right section with email input and subscribe button */
   .footer-top-right {
-    display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
-    gap: 35px;
   }
-  
-  /* Email input container */
   .footer-email-input {
-    display: flex;
-    gap: 35px;
-    padding: 20px 30px;
-    border-radius: 50px;
-    background: #32323b;
-    padding-right: 80px;
+    padding: 15px 20px;
+    gap: 15px;
+    padding-right: 20px;
+    width: 70%;
   }
-  
-  /* Email input field */
-  .footer-email-input input {
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #a0a0a0;
-    font-family: poppins;
-    font-size: 18px;
-  }
-  
-  /* Subscribe button */
   .footer-subscribe {
-    font-size: 20px;
-    padding: 22px 50px;
-    border-radius: 50px;
-    background: linear-gradient(to right, #d2941a, #eee395, #563b05);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* Hover effects */
-  .footer-subscribe:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-  
-  .footer-email-input:hover {
-    border: 1px solid white;
-  }
-  
-  /* Footer bottom section */
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
     font-size: 18px;
+    padding: 15px 40px;
   }
-  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
   .footer-bottom-right {
-    display: flex;
-    gap: 50px;
-    margin-bottom: 50px;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
   }
-  
-  /* Footer logo */
   .footer-top-left img {
-    width: 100px; /* Adjust this to the size you want */
-    height: auto; /* Maintains the aspect ratio of the image */
+    width: 79px; 
+    height: auto; 
   }
-  
-  /* Media query for screens smaller than 768px */
-  @media (max-width: 768px) {
-  
-    /* Adjust footer margins */
-    .footer {
-      margin: 50px 20px;
-      gap: 20px;
-    }
-  
-    /* Stack the top section elements vertically */
-    .footer-top {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    /* Center the text and reduce max-width */
-    .footer-top-left p {
-      font-size: 18px;
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    /* Center email input and subscribe button */
-    .footer-top-right {
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-    }
-  
-    /* Adjust email input container size */
-    .footer-email-input {
-      padding: 15px 20px;
-      gap: 15px;
-      padding-right: 20px;
-      width: 70%;
-    }
-  
-    /* Adjust subscribe button size */
-    .footer-subscribe {
-      font-size: 18px;
-      padding: 15px 40px;
-    }
-  
-    /* Stack bottom section elements vertically */
-    .footer-bottom {
-      flex-direction: column;
-      gap: 10px;
-      text-align: center;
-    }
-  
-    /* Adjust the spacing in the footer bottom right section */
-    .footer-bottom-right {
-      justify-content: center;
-      gap: 30px;
-      margin-bottom: 20px;
-    }
-    .footer-top-left img {
-      width: 79px; /* Adjust this to the size you want */
-      height: auto; /* Maintains the aspect ratio of the image */
-    }
+}
+@media (max-width: 480px) {
+  .footer {
+    margin: 30px 10px; 
+    gap: 15px;
   }
-  @media (max-width: 480px) {
-    .footer {
-      margin: 30px 10px; /* Reduce margins */
-      gap: 15px;
-    }
-  
-    .footer-top {
-      gap: 15px; /* Reduce gap between sections */
-    }
-    .footer-top-left img {
-      width: 79px; /* Adjust this to the size you want */
-      height: auto; /* Maintains the aspect ratio of the image */
-    }
-  
-    .footer-top-left p {
-      font-size: 16px; /* Reduce font size */
-      max-width: 100%;
-    }
-  
-    .footer-top-right {
-      gap: 10px; /* Reduce gap between email input and button */
-    }
-  
-    .footer-email-input {
-      padding: 10px 15px; /* Reduce padding */
-      gap: 10px;
-      width: 70%;
-    }
-  
-    .footer-subscribe {
-      font-size: 16px; /* Reduce font size */
-      padding: 10px 20px; /* Adjust button size */
-    }
-  
-    .footer-bottom {
-      font-size: 16px; /* Reduce bottom section font size */
-      gap: 10px;
-    }
-  
-    .footer-bottom-right {
-      gap: 20px; /* Reduce gap between links */
-    }
+  .footer-top {
+    gap: 15px; 
   }
+  .footer-top-left img {
+    width: 79px; 
+    height: auto; 
+  }
+  .footer-top-left p {
+    font-size: 16px; 
+    max-width: 100%;
+  }
+  .footer-top-right {
+    gap: 10px; 
+  }
+  .footer-email-input {
+    padding: 10px 15px; 
+    gap: 10px;
+    width: 70%;
+  }
+  .footer-subscribe {
+    font-size: 16px; 
+    padding: 10px 20px; 
+  }
+  .footer-bottom {
+    font-size: 16px; 
+    gap: 10px;
+  }
+  .footer-bottom-right {
+    gap: 20px; 
+  }
+}
