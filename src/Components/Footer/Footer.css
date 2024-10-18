@@ -117,6 +117,7 @@
       padding: 15px 20px;
       gap: 15px;
       padding-right: 20px;
+      width: 70%;
     }
   
     /* Adjust subscribe button size */
@@ -138,6 +139,10 @@
       gap: 30px;
       margin-bottom: 20px;
     }
+    .footer-top-left img {
+      width: 79px; /* Adjust this to the size you want */
+      height: auto; /* Maintains the aspect ratio of the image */
+    }
   }
   @media (max-width: 480px) {
     .footer {
@@ -147,6 +152,10 @@
   
     .footer-top {
       gap: 15px; /* Reduce gap between sections */
+    }
+    .footer-top-left img {
+      width: 79px; /* Adjust this to the size you want */
+      height: auto; /* Maintains the aspect ratio of the image */
     }
   
     .footer-top-left p {
@@ -161,6 +170,7 @@
     .footer-email-input {
       padding: 10px 15px; /* Reduce padding */
       gap: 10px;
+      width: 70%;
     }
   
     .footer-subscribe {

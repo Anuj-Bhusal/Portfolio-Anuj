@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 170px;
+  padding: 20px 100px;
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -171,8 +171,8 @@
   }
 
   .nav-mob-close {
-    left: 150px; /* Adjust position */
-    top: 20px;
+    left: 280px; /* Adjust position */
+    top: 10px;
     width: 25px; /* Smaller close button */
   }
 
