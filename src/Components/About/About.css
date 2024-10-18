@@ -21,7 +21,7 @@
   font-size: 80px;
   font-weight: 600;
   position: relative;
-  z-index: 1; /* Ensure the title is above the background */
+  z-index: 1;
   margin: 0;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .about-left .about-me-img {
-  width: 300px; /* Adjust size as needed */
+  width: 300px;
   height: auto;
   border-radius: 10px;
 }
@@ -83,41 +83,82 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .about {
-      margin-top: 50px; /* Reduced margin for smaller screens */
+    margin-top: 50px;
   }
 
   .about-title h1 {
-      font-size: 50px; /* Smaller font size */
+    font-size: 50px; /* Adjusted for smaller screens */
   }
 
   .about-sections {
-      flex-direction: column; /* Stack sections vertically */
-      gap: 20px; /* Reduced gap */
+    flex-direction: column;
+    gap: 20px;
   }
 
   .about-left .about-me-img {
-      width: 100%; /* Full width on smaller screens */
-      max-width: 300px; /* Limit max width */
+    width: 100%;
+    max-width: 300px;
   }
 
   .about-right {
-      max-width: 100%; /* Full width for right section */
+    max-width: 100%;
   }
 
   .about-para {
-      font-size: 20px; /* Smaller paragraph font size */
+    font-size: 20px;
   }
 
   .about-achievements {
-      flex-direction: column; /* Stack achievements vertically */
-      align-items: center; /* Center achievements */
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-achievement h1 {
-      font-size: 40px; /* Smaller achievement title size */
+    font-size: 40px;
   }
 
   .about-achievement p {
-      font-size: 18px; /* Smaller achievement description size */
+    font-size: 18px;
+  }
+}
+
+/* Further Reductions for Smaller Screens */
+@media (max-width: 480px) {
+  .about {
+    margin-top: 30px;
+  }
+
+  .about-title h1 {
+    font-size: 40px; /* Smaller title size for small screens */
+  }
+
+  .about-sections {
+    gap: 15px; /* Reduced gap */
+  }
+
+  .about-left .about-me-img {
+    width: 90%;
+    max-width: 250px; /* Smaller image size */
+  }
+
+  .about-right {
+    max-width: 90%; /* Full width for content */
+  }
+
+  .about-para {
+    font-size: 18px; /* Smaller font size for paragraphs */
+    line-height: 1.4;
+  }
+
+  .about-achievements {
+    gap: 10px; /* Reduce gap between achievements */
+  }
+
+  .about-achievement h1 {
+    font-size: 30px; /* Further reduced achievement title */
+  }
+
+  .about-achievement p {
+    font-size: 16px; /* Smaller description font size */
   }
 }

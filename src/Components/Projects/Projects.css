@@ -129,3 +129,33 @@
     padding: 8px 16px; /* Reduce padding on buttons */
   }
 }
+
+/* Media Query for smaller screens (below 480px) */
+@media (max-width: 480px) {
+  .project-title h1 {
+    font-size: 30px; /* Further reduce title font size */
+  }
+
+  .project-container {
+    gap: 10px; /* Reduce gap between project cards for smaller screens */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .project-card {
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 20px; /* Further reduce top margin */
+  }
+
+  .project-details h3 {
+    font-size: 16px; /* Reduce project title font size for smaller screens */
+  }
+
+  .project-details p {
+    font-size: 14px; /* Reduce description font size for smaller screens */
+  }
+
+  .project-details a {
+    font-size: 12px; /* Further reduce link font size */
+    padding: 6px 12px; /* Reduce padding on buttons */
+  }
+}

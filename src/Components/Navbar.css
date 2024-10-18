@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 170px;
-  background-color: transparent; 
+  background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -69,7 +69,7 @@
 .nav-connect {
   padding: 15px 30px;
   border-radius: 50px;
-  background: linear-gradient(to right, #b3914e, #eee395, #b69553);
+  background: linear-gradient(to right, #d2941a, #eee395, #563b05);
   font-size: 18px;
   font-weight: bold;
   color: #fff;
@@ -99,13 +99,13 @@
   .navbar {
     margin: 20px 50px;
     padding: 10px 30px;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
-  
+
   .navbar img {
     width: 80px;
   }
-  
+
   .nav-connect {
     display: none;
   }
@@ -140,9 +140,45 @@
   }
 
   .nav-menu li {
-    font-size: 30px;
+    font-size: 24px; /* Adjusted font size for smaller screens */
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px; /* Reduce padding */
+    margin: 0;
+  }
+
+  .navbar img {
+    width: 60px; /* Smaller logo */
+  }
+
+  .nav-menu {
+    gap: 30px; /* Reduce gap between menu items */
+  }
+
+  .nav-menu li {
+    font-size: 24px; /* Reduce font size for menu items */
+    padding-left: 50px; /* Adjust spacing */
+  }
+
+  .nav-mob-open {
+    right: 10px; /* Adjust the position */
+    top: 10px;
+  }
+
+  .nav-mob-close {
+    left: 150px; /* Adjust position */
+    top: 20px;
+    width: 25px; /* Smaller close button */
+  }
+
+  .nav-connect {
+    font-size: 16px; /* Reduce button font size */
+    padding: 10px 20px;
+    border-radius: 40px; /* Adjust button size */
   }
 }

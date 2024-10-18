@@ -57,36 +57,40 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .skills {
-    margin-top: 50px; /* Reduce top margin */
+      margin-top: 50px; /* Reduce top margin */
   }
 
   .skill-title h1 {
-    font-size: 50px; /* Reduce font size for smaller screens */
+      font-size: 50px; /* Reduce font size for smaller screens */
   }
 
   .skill {
-    flex-direction: column; /* Stack skill items vertically */
-    padding-left: 0; /* Remove left padding */
-    align-items: flex-start; /* Align items to the start */
+      flex-direction: column; /* Stack skill items vertically */
+      padding-left: 0; /* Remove left padding */
+      align-items: flex-start; /* Align items to the start */
   }
 
   .skill p {
-    min-width: auto; /* Remove min-width to allow flexibility */
-    font-size: 18px; /* Reduce font size */
-    padding-left: 20px; /* Add some padding to left */
+      min-width: auto; /* Remove min-width to allow flexibility */
+      font-size: 18px; /* Reduce font size */
+      padding-left: 20px; /* Add some padding to left */
   }
 
   .skill hr {
-    width: 100%; /* Full width on smaller screens */
+      width: 100%; /* Full width on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .skill-title h1 {
-    font-size: 40px; /* Further reduce font size for very small screens */
+      font-size: 40px; /* Further reduce font size for very small screens */
   }
 
   .skill p {
-    font-size: 16px; /* Smaller font for better readability */
+      font-size: 16px; /* Smaller font for better readability */
+  }
+
+  .skill {
+      gap: 15px; /* Reduce gap between skills for tighter spacing */
   }
 }

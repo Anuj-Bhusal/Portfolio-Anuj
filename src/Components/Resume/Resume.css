@@ -39,7 +39,7 @@
     border: none;
     color: white;
     border-radius: 50px;
-    background: linear-gradient(to right, #b3914e, #eee395, #b69553);
+    background: linear-gradient(to right, #d2941a, #eee395, #563b05);
     font-size: 22px;
     padding: 20px 60px;
     margin-bottom: 50px;
@@ -59,7 +59,6 @@
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-
     .resume-container {
         margin-top: 50px; /* Reduce top margin */
         gap: 15px; /* Reduce gap for better spacing */
@@ -78,5 +77,23 @@
     .download-button {
         font-size: 18px; /* Reduce button font size */
         padding: 15px 40px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .resume-title h1 {
+        font-size: 30px; /* Further reduce font size for title */
+    }
+
+    .profile-section, .project {
+        max-width: 100%; /* Full width for better adaptability */
+        margin: 0 10px; /* Slightly increase margin for spacing */
+        line-height: 1.4; /* Further reduce line height */
+    }
+
+    .download-button {
+        font-size: 16px; /* Reduce button font size */
+        padding: 12px 30px; /* Reduce padding on buttons */
     }
 }
