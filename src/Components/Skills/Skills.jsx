@@ -7,7 +7,7 @@ const Skills = () => {
         <h1>My Skills</h1>
       </div>
       <div className="skill">
-        <p>HTML & CSS</p> <hr style ={{width: '50%'}}></hr>
+        <p>HTML & CSS</p> <hr style ={{width: '85%'}}></hr>
       </div>
       <div className="skill">
         <p>Python</p> <hr style ={{width: '70%'}}></hr>
@@ -19,7 +19,7 @@ const Skills = () => {
         <p>React JS</p> <hr style ={{width: '80%'}}></hr>
       </div>
       <div className="skill">
-        <p>Javascript</p> <hr style ={{width: '79%'}}></hr>
+        <p>Javascript</p> <hr style ={{width: '80%'}}></hr>
       </div>
     </div>
   )

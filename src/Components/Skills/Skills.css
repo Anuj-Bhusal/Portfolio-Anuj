@@ -77,8 +77,8 @@
   }
 
   .skill hr {
-      width: 90%; /* Full width on smaller screens */
-      margin-left: 6px;
+      width: 70%; /* Full width on smaller screens */
+      margin-left: 20px;
   }
 }
 
@@ -92,6 +92,11 @@
   }
 
   .skill {
+    width: 70%;
       gap: 15px; /* Reduce gap between skills for tighter spacing */
   }
+  .skill hr {
+    width: 70%; /* Full width on smaller screens */
+    margin-left: 20px;
+}
 }
