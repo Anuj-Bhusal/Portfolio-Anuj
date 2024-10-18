@@ -48,7 +48,7 @@
 }
 
 .skill:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.3s;
   max-width: 100%; /* Prevent overflow when scaling */
   box-sizing: border-box; /* Maintain sizing integrity */
@@ -77,7 +77,8 @@
   }
 
   .skill hr {
-      width: 100%; /* Full width on smaller screens */
+      width: 90%; /* Full width on smaller screens */
+      margin-left: 6px;
   }
 }
 

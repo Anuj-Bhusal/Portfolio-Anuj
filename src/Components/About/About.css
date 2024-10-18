@@ -76,7 +76,7 @@
 }
 
 .about-achievement:hover {
-  transform: scale(1.12);
+  transform: scale(1.07);
   transition: 0.5s;
 }
 
@@ -114,7 +114,8 @@
   }
 
   .about-achievement h1 {
-    font-size: 40px;
+    font-size: 35px;
+    margin-left: 8px;
   }
 
   .about-achievement p {
@@ -155,7 +156,8 @@
   }
 
   .about-achievement h1 {
-    font-size: 30px; /* Further reduced achievement title */
+    font-size: 25px; /* Further reduced achievement title */
+    margin-left: 10px;
   }
 
   .about-achievement p {
